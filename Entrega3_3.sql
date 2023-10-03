@@ -6,8 +6,8 @@ CREATE DATABASE Registro;
 USE Registro;
 
 CREATE TABLE Jugador (
-username VARCHAR NOT NULL,
-password VARCHAR NOT NULL
+username VARCHAR(30),
+password VARCHAR(30)
 ) engine = InnoDB;
 
 CREATE TABLE Partida (
@@ -18,7 +18,7 @@ dia INTEGER PRIMARY KEY NOT NULL,
 hora INTEGER PRIMARY KEY NOT NULL,
 minuto INTEGER PRIMARY KEY NOT NULL,
 duración INTEGER PRIMARY KEY NOT NULL,
-ganador TEXT NOT NULL
+ganador VARCHAR(30)
 )ENGINE = InnoDB;
 --La duracion en minutos
 
